@@ -12,7 +12,11 @@ $(document).ready(function() {
         const campoTarefa = $('#campo-tarefa').val();
         const novoItem = $('<li style="display: flexwrap"></li>');
         $(`<li>${campoTarefa}</li>` ).appendTo(novoItem);
-        $(novoItem).appendTo('ul').click();
+        $(novoItem).appendTo('ul');
 
+        })
+
+        $('ul').on('click', 'li', function(e){
+            $(this).toggleClass('riscarTarefa');
         })
     })

@@ -40,7 +40,14 @@ button {
     background-color: rgba(184, 135, 11, 0.808);
 }
 
-ul {
+.riscarTarefa {
     cursor:pointer;
     text-decoration: line-through;
 }
+
+ul li {
+    cursor: pointer;
+    align-items: center;
+    display: block;
+}
+
